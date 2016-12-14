@@ -20,18 +20,27 @@ Then types in your query input. The software will return the top 10 corrected qu
 >python main.py server 9999
 
 This will starts an Http server on your localhost port=9999 and serves as an spelling correction online service. This server expects a JSON object from a POST method:
+```json
 {
 	“Query”: “your query”
 	“K”: 10
 }
+```
 The server will return a JSON object with format of:
+```json
 {
 	“Corrected_query”:”[list of corrected query]”
 }
+```
 For example, in your command line type in following line when your server is running:
-curl --data "{\"query\":\"query query query\", \"K\":\"10\"}" --header "Content-Type: application/json" localhost:9999
+>curl --data "{\"query\":\"make america grat agan\", \"K\":\"5\"}" --header "Content-Type: application/json" localhost:9999
 The expected return JSON object  will look like:
-{"corrected_query": ["query query query"]}
+```json
+{
+	"corrected_query": 
+	["make america great adam", "make america what again", "make america great again", "make america iraq again", "make america grant again"]
+}
+```json
 3. Training parameters: In your shell types and runs:
 
 >python main.py train
