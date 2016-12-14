@@ -12,38 +12,41 @@ To use the software, first unpack the archive. The software already provides a l
 The software provides three different usages: 
 1. Testing a given query in command line. In your shell types and runs:
 
->python main.py test 10
+>	python main.py test 10
 
 Then types in your query input. The software will return the top 10 corrected queries with scores.
 2. Setting up a simple Http server. In your shell types and runs:
 
->python main.py server 9999
+>	python main.py server 9999
 
 This will starts an Http server on your localhost port=9999 and serves as an spelling correction online service. This server expects a JSON object from a POST method:
-```json
+```
 {
 	“Query”: “your query”
 	“K”: 10
 }
 ```
 The server will return a JSON object with format of:
-```json
+```
 {
 	“Corrected_query”:”[list of corrected query]”
 }
 ```
 For example, in your command line type in following line when your server is running:
->curl --data "{\"query\":\"make america grat agan\", \"K\":\"5\"}" --header "Content-Type: application/json" localhost:9999
+
+>	curl --data "{\"query\":\"make america grat agan\", \"K\":\"5\"}" --header "Content-Type: application/json" localhost:9999
+
 The expected return JSON object  will look like:
-```json
+```
 {
 	"corrected_query": 
 	["make america great adam", "make america what again", "make america great again", "make america iraq again", "make america grant again"]
 }
-```json
+```
+
 3. Training parameters: In your shell types and runs:
 
->python main.py train
+>	python main.py train
 
 This will runs a training process for the parameters λ and µ. It expects a user provided training set and writes the parameters to the output file.
 
