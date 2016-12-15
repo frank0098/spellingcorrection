@@ -59,7 +59,6 @@ In your shell types and runs:
 
 This will runs a training process for the parameters λ and µ. It expects a user provided training set and writes the parameters to the output file.
 
-Notice that the dataset is only for demo purpose with limited size and does not provide very accurate result.
 
 ## Directory structure
 <pre>
@@ -87,21 +86,22 @@ spellingcorrection/
 </pre>
 
 ##Introduction to the dataset
+Due to the limitation of time and resource, we only provide dataset with limited size for demo purpose.
 ###addition.txt
-the addition matrix of the error model, used for demo
+the addition matrix of the error model
 ###subsititution.txt
-the addition matrix of the error model, used for demo
+the addition matrix of the error model
 ###deletion.txt
-the addition matrix of the error model, used for demo
+the addition matrix of the error model
 ###singlecollection.txt
-single charactor count of the AP news (1988) dataset, used for demo
+single charactor count of the AP news (1988) dataset
 ###unigramprob.txt
-unigram probability that trained from the COCA unigarm dataset, used for demo
+unigram probability that trained from the COCA unigarm dataset
 ###bigramprob.txt
-bigram probability that trained from the COCA bigram dataset, used for demo
+bigram probability that trained from the COCA bigram dataset
 ###lexicon.txt
-lexicon from google 10000 english word dataset, used for demo, lack of phrase
+lexicon from google 10000 english word dataset, does not contain many phrases
 ###training.txt
-training set that craweld form Microsoft Bing search spelling correction service, used for demo
+training set that craweld form Microsoft Bing search spelling correction service
 ###singlecollection.txt
-single charactor count of the AP news (1988) dataset, used for demo
+single charactor count of the AP news (1988) dataset
