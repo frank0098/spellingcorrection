@@ -8,7 +8,10 @@ This software has been tested on MacOS Sierra with Python 2.7 with necessary pac
 
 #
 #Usage
-To use the software, first unpack the archive. The software already provides a limited dataset with trained parameters from the dataset. Users can choose to use the the dataset we provide or they can use their own dataset to meet their specific requirements. Their dataset should follow the format of the provided dataset. They also have the option to specify the path to their customized dataset by changing the paths in the conf.cfg file.
+To use the software, first download the archive:
+>	git clone https://github.com/frank0098/spellingcorrection.git </br>
+
+The software already provides a limited dataset with trained parameters from the dataset. Users can choose to use the the dataset we provide or they can use their own dataset to meet their specific requirements. Their dataset should follow the format of the provided dataset. They also have the option to specify the path to their customized dataset by changing the paths in the conf.cfg file.
 
 The software provides three different usages: 
 
