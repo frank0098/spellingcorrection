@@ -6,6 +6,7 @@ Flexible Spelling Correction framework tool that provide customized services for
 #Requirement: 
 This software has been tested on MacOS Sierra with Python 2.7 with necessary packages installed.
 
+#
 #Usage
 To use the software, first unpack the archive. The software already provides a limited dataset with trained parameters from the dataset. Users can choose to use the the dataset we provide or they can use their own dataset to meet their specific requirements. Their dataset should follow the format of the provided dataset. They also have the option to specify the path to their customized dataset by changing the paths in the conf.cfg file.
 
@@ -56,3 +57,28 @@ In your shell types and runs:
 This will runs a training process for the parameters λ and µ. It expects a user provided training set and writes the parameters to the output file.
 
 Notice that the dataset is only for demo purpose with limited size and does not provide very accurate result.
+
+## Directory structure
+<pre>
+spellingcorrection/
+├── dataset
+│   ├── addition.txt
+│   ├── deletion.txt
+│   ├── substitution.txt
+│   ├── lexicon.txt
+│   ├── singlecollection.txt
+│   ├── unigramprob.txt
+│   ├── bigramprob.txt
+│   ├── doublecollection.txt
+│   ├── training_params.txt
+│   ├── training.txt
+│   └── trainoutput.txt
+├── README
+├── conf.cfg  
+├── main.py
+├── lexicon.py
+├── phrase.py
+├── prob.py
+├── query_correction.py
+├── score.py
+</pre>
