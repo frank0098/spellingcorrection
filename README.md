@@ -85,3 +85,23 @@ spellingcorrection/
 ├── query_correction.py
 ├── score.py
 </pre>
+
+##Introduction to the dataset
+###addition.txt
+the addition matrix of the error model, used for demo
+###subsititution.txt
+the addition matrix of the error model, used for demo
+###deletion.txt
+the addition matrix of the error model, used for demo
+###singlecollection.txt
+single charactor count of the AP news (1988) dataset, used for demo
+###unigramprob.txt
+unigram probability that trained from the COCA unigarm dataset, used for demo
+###bigramprob.txt
+bigram probability that trained from the COCA bigram dataset, used for demo
+###lexicon.txt
+lexicon from google 10000 english word dataset, used for demo, lack of phrase
+###training.txt
+training set that craweld form Microsoft Bing search spelling correction service, used for demo
+###singlecollection.txt
+single charactor count of the AP news (1988) dataset, used for demo
